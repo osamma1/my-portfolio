@@ -1,0 +1,205 @@
+.contact{
+    padding:150px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height:100vh;
+    width:100vw;
+
+}
+.contact h2 {
+  color:#fff;
+    font-size:45px;
+    font-weight:700;
+    margin-bottom:20px;
+    text-align:center;
+    text-transform:capitalize;
+    font-family: 'Outfit';
+
+}
+
+.info {
+  text-align:center;
+  
+  font-family:'DM Serif Text';
+  letter-spacing:2px;
+
+}
+ .info h4 {
+  color:#a94fe0;
+ }
+.info h4 span{
+  color: #fff;
+  font-family:'Outfit';
+  font-weight:400;
+}
+
+.contact h2 span{
+  color: #8f34c8;
+}
+
+
+.iconButtons {
+  display: flex;
+  gap: 15px;
+  justify-content:center;
+  margin-top: 20px;
+}
+
+.iconButtons .icon {
+  color:#9d00ff;
+  font-size: 22px;
+  margin-right: 15px;
+  display:inline-flex;
+  align-items:center;
+  justify-content: center;
+  width:40px;
+  height:40px;
+  padding: 5px;
+  border: 2px solid #9d00ff;
+  border-radius: 30px;
+  margin-bottom:40px;
+  transition: all .42s;
+}
+
+.iconButtons .icon:hover {
+  color: #ffffff;
+  background-color: #9d00ff;
+}
+
+.contTop{
+
+    padding: 10px 0px;
+}
+
+.contTop h2{
+    color:#fff;
+    font-size:45px;
+    font-weight:700;
+    margin-bottom:20px;
+    text-align:center;
+    text-transform:capitalize;
+    font-family: 'Outfit';
+
+}
+
+.contTop h2 span{
+
+    color: #8f34c8;
+    
+}
+
+.contTop p{
+    color:#fff;
+    font-size:17px;
+    font-weight: 400;
+    line-height:24px;
+    margin-bottom:50px;
+    text-align:center;
+    font-family: 'Outfit';
+}
+/* Container Styling */
+.mainCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+   
+  }
+  
+  /* Form Styling */
+  .form {
+   /* background-color: #0d0d1a;  */
+padding: 0px 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%;
+    color: #ffffff;
+    /* box-shadow: 0 4px 8px rgba(53, 24, 66, 0.2); */
+  }
+  
+  /* Input Container Styling */
+  .contInput {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  /* Input and Textarea Styling */
+  .input,
+  .textarea {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #9d00ff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .textarea{
+    display: flex;
+    justify-content:center;
+    margin:0px 25%;
+  }
+  .input:focus,
+  .textarea:focus {
+    border-color: #653777;
+  }
+  
+  .textarea {
+    resize: none;
+    height: 120px;
+    margin-bottom:40px;
+  }
+  
+  /* Submit Button Styling */
+  .sub {
+    background-color: #8f34c8;
+    border:2px solid #8f34c8;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    width: 30%;
+    display:flex;
+    justify-content:center;
+    margin:0px 35%;
+    
+  }
+  
+  .sub:hover {
+    background-color: transparent;
+    border:2px solid #8f34c8;
+  
+  }
+
+
+/* Responsive Styling for screens with max-width of 620px */
+@media (max-width: 620px) {
+  .form {
+      padding: 0px 5px;
+      max-width: 100%;
+  }
+
+  .contInput {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .textarea {
+      margin: 0;
+      width: 100%;
+  }
+
+  .sub {
+      width: 80%;
+      margin: 20px 10%;
+  }
+}
+  

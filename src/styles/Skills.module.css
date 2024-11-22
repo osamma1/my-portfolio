@@ -1,0 +1,136 @@
+.areas{
+    margin:60px 0px;
+}
+
+
+.areastop h2{
+    color:#fff;
+    font-size:40px;    
+    text-transform:capitalize;
+    font-weight:700;
+    text-align: center;
+    margin-bottom:center;
+    font-family:'Outfit';
+
+}
+.areastop h2 span{
+    color: #8f34c8;
+}
+
+.areastop p{
+    max-width: 700px;
+    color:#de7aff;
+    font-family: 'Outfit';
+    font-size:17px;
+    font-weight:400;
+    line-height: 28px;
+    text-align: center;
+    margin:0px auto 80px;
+
+}
+
+
+
+.skilldetails{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px , 200px));
+    gap:2rem;
+    justify-content:center;
+    align-items:center;
+    
+
+}
+
+.boxImage img{
+    width:80px;
+    height:80px;
+    cursor:pointer;
+    transition:all .42s;
+    
+
+}
+
+.boxImage:hover img{
+    -webkit-filter: grayscale(100%);
+    filter:grayscale(100%);
+
+}
+
+.boxImage{
+    filter:none;
+    text-align: center;
+    padding : 20px 20px;
+    background-color: #dedddd;
+    border-radius:15px;
+    box-shadow:  rgba(144, 65, 143, 0.476) 0px 8px 20px;
+    cursor:pointer;
+    transition: all .42s ease;
+    margin:0px 20px
+}
+
+.boxImage:hover{
+    background-color:#ffffff;
+    box-shadow:  rgba(180, 64, 178, 0.636) 0px 12px 24px;
+}
+
+.box h4{
+    color:#747374;
+    font-size:25px;
+    font-weight:600px;
+    margin:12px 0px 0px 0px ;
+}
+
+
+.box h3{
+    text-align: center;
+    color:#ffffff;
+    font-size:20px;
+    font-weight:500px;
+    margin:20px;
+}
+
+
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+    .skilldetails {
+        grid-template-columns: repeat(3, minmax(100px, 200px));
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .areastop h2 {
+        font-size: 28px;
+    }
+    
+    .areastop p {
+        font-size: 15px;
+    }
+    
+    .skilldetails {
+        grid-template-columns: repeat(3, minmax(100px, 1fr)); /* Adjusts to 2 columns on mobile */
+        gap: 1.5rem;
+    }
+}
+
+/* Small Mobile responsiveness */
+@media (max-width: 600px) {
+    .skilldetails {
+        grid-template-columns:repeat(2, minmax(100px, 1fr)); /* Adjusts to a single column on small screens */
+        gap: 1rem;
+    }
+
+    .boxImage img {
+        width: 60px;
+        height: 60px; /* Smaller icon size on small screens */
+    }
+    
+    .box h4 {
+        font-size: 20px;
+    }
+    
+    .box h3 {
+        font-size: 18px;
+    }
+}

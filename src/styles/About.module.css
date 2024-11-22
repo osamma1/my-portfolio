@@ -1,0 +1,351 @@
+/* About.module.css */
+
+.aboutContainer {
+    /* position: relative; */
+    padding: 120px 12% 60px;
+    width: 100vw;
+    height: 95vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3rem; */
+  }
+  
+  .videoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .overlay {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    text-align:left;
+  }
+  
+  .about {
+    /* max-width: 1200px; */
+    padding: 120px 8% 60px;
+    /* width: 100vw;
+    height: 100vh; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .heading {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform:Capitalize;
+    letter-spacing:2px;
+    font-family: 'Leckerli';
+  }
+  
+  .subheading {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform:uppercase;
+    color: #ffffff;
+    margin: 12px 0px;
+    font-family:'Outfit';
+  }
+ /* Styling for the heading */
+.thirdheading {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 22px;
+  padding-right: 8px;
+  font-family: 'DM Serif Text',; /* Ensure a consistent font */
+}
+
+/* Typewriter effect styling */
+.typewriter {
+  margin-left: 8px; /* Space between "And I'm a" and the typewriter text */
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  white-space: nowrap; /* Prevents the typewriter text from wrapping */
+  overflow: hidden;
+  border-right: 2px solid #9d00ff; /* Blinking caret color */
+  animation: typing 2s steps(10, end), blink-caret 0.5s step-end infinite;
+}
+
+/* Typewriter animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #9d00ff; }
+}
+
+
+.paragraph{
+  max-width: 640px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  font-family: 'DM Serif Text';
+  margin-bottom: 30px;
+  color:#ffffff;
+  font-size: 18px;
+}
+
+  
+  .iconButtons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .iconButtons .icon {
+    color:#9d00ff;
+    font-size: 22px;
+    margin-right: 15px;
+    display:inline-flex;
+    align-items:center;
+    justify-content: center;
+    width:40px;
+    height:40px;
+    padding: 5px;
+    border: 2px solid #9d00ff;
+    border-radius: 30px;
+    margin-bottom:40px;
+    transition: all .42s;
+  }
+  
+  .iconButtons .icon:hover {
+    color: #ffffff;
+    background-color: #9d00ff;
+  }
+  
+  .homBtn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .arrow{
+    /* color: #a66cc9; */
+    font-size:30px;
+    margin-left:2px;
+    transition: all .42;
+  }
+  
+  .work{
+    display: inline-flex;
+    align-items:center;
+    justify-content: center;
+    font-size:20px;
+    font-weight: 700;
+    border:2px solid #9d00ff;
+    background-color:#9d00ff;
+    color:#fff;
+    padding:8px 25px;
+    border-radius: 50px;
+    transition: all .42s;
+    font-family: 'Outfit';
+
+  }
+  
+  .work:hover {
+    background-color:transparent;
+  }
+  
+  .arrow:hover{
+    transform: rotate(0deg);;
+  }
+  .profileImage {
+    border-radius: 10px;
+    max-width: 100%;
+    width: 450px;
+    height:auto; 
+  }
+  .scroll {
+    position: relative;
+    background: linear-gradient(0deg, rgba(157, 0, 255, 1) 0%, rgb(30, 20, 42, 1) 100%);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    height: 50px;
+}
+
+.scrollSkills {
+    display: inline-block;
+    white-space: nowrap;
+    animation: slide 30s linear infinite;
+}
+
+.scrollSkills span {
+    height: 50px;
+    font-size: 24px;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+    margin-right: 5px;
+    font-weight: 700;
+    padding-top: 2px;
+}
+
+.scroll:hover .scrollSkills {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+
+/* Default desktop layout */
+.about {
+  display: flex;
+  flex-direction: row; /* Row layout for desktop */
+  align-items: center;
+  /* Other existing styles */
+}
+
+/* Media query for tablet and mobile screens */
+@media (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px 5%; /* Add padding for better layout */
+  }
+
+  .profileImage {
+    order: -1; /* Moves image to the top */
+    width: 80%; /* Adjust size for mobile */
+    max-width: 250px; /* Limit max width */
+    margin: 0 auto 20px auto; /* Center image with space below */
+  }
+
+  .subheading,
+  .heading,
+  .thirdheading,
+  .paragraph,
+  .iconButtons,
+  .actionButton {
+    order: 0; /* Ensure content appears below the image */
+    text-align: center;
+    width: 100%; /* Make content take full width for mobile */
+  }
+
+  .iconButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .homBtn{
+    justify-content:center;
+  }
+}
+
+
+
+
+/* Media Queries for Tablet and Mobile */
+
+@media (max-width: 1024px) {
+    .aboutContainer {
+        padding: 80px 5%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 60px 5%;
+        gap: 2rem;
+    }
+
+    .subheading {
+        font-size: 50px;
+    }
+
+    .thirdheading {
+        font-size: 18px;
+    }
+
+    .typewriter {
+        font-size: 24px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+    .profileContainer{
+      display:none;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 20px;
+    }
+
+    .subheading {
+        font-size: 32px;
+    }
+
+    .thirdheading {
+        font-size: 16px;
+    }
+
+    .typewriter {
+        font-size: 18px;
+    }
+
+    .paragraph {
+        font-size: 13px;
+    }
+
+    .work {
+        font-size: 16px;
+        padding: 5px 15px;
+    }
+
+    .iconButtons {
+        gap: 10px;
+    }
+
+    .iconButtons .icon {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .scroll {
+        height: 35px;
+    }
+
+    .scrollSkills span {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+}

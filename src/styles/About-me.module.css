@@ -1,0 +1,214 @@
+.aboutContainer {
+    padding: 120px 12% 60px;
+    width: 100%;
+    height: auto;
+    margin: 90px 0;
+}
+
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.mainAbout{
+   max-width: 100%;
+   width:430px;
+   height:auto;
+
+}
+
+
+
+.aboutText h2{
+    color:#a66cc9;
+    font-size:22px;
+    text-transform: capitalize;
+    font-weight:500;
+    margin-bottom: 15px;
+    font-family: 'Outfit';
+}
+
+.aboutText h3{
+    color:#fff;
+    font-size:40px;
+    text-transform: capitalize;
+    font-weight:700;
+    line-height: 1.4;
+    font-family: 'Outfit';
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.aboutText h3 span{
+    color:#8f34c8;
+}
+
+.aboutText p {
+    max-width:540px;
+    color:#ffffff;
+    font-size:16px;
+    line-height:28px;
+    margin:20px 0px;
+    font-family: 'Outfit';
+    word-spacing: 5px;
+   
+}
+
+.aboutli{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-bottom:30px;
+    align-items:center;
+    justify-content:center;
+    animation: fadeInUp 1.5s ease-out forwards;
+    
+}
+
+.aboutli li{
+    color:#dfabfb;
+    
+    font-size:15px;
+    text-transform: capitalize;
+    font-weight:400;
+    font-family: 'Outfit';
+    margin: 10px 0px;
+}
+
+.aboutli li strong{
+    color:#ffffff;
+    font-size:18px;
+    font-family: 'Outfit';
+}
+
+
+.call {
+    margin-left: 8px;
+    padding-top: 5px;
+    font-size: 22px;
+    color: #9d00ff;
+}
+
+.connectbtn {
+    border-radius: 50px;
+    /* background-color: #8001aa; */
+    background-color:transparent;
+
+    backdrop-filter: blur(50px);
+    transition: all .42s;
+    padding: 8px 20px;
+    border: 2px solid #9d00ff;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: 'Outfit';
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.connectbtn:hover {
+    background-color: #653777;
+    color: white;
+}
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* Responsive styling for tablets (between 768px and 1024px) */
+@media (max-width: 1024px) {
+    .about {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .aboutContainer {
+        padding: 80px 10% 40px;
+    }
+
+    .aboutText h3 {
+        font-size: 32px;
+    }
+
+    .aboutText p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .mainAbout{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height:300px;
+        overflow: hidden;
+    }
+}
+
+/* Responsive styling for mobile (less than 768px) */
+@media (max-width: 768px) {
+    .about {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .aboutContainer {
+        padding: 60px 5% 30px;
+    }
+
+    .aboutText h3 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .aboutText p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .mainAbout{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height:300px;
+        overflow: hidden;
+    }
+
+    .connectbtn {
+        font-size: 16px;
+        padding: 6px 18px;
+    }
+
+    .call {
+        font-size: 20px;
+    }
+}
+
+.aboutli li{
+    
+    align-items: self-start;
+    
+}
+
+
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
